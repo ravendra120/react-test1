@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": "5e0a",
+      "name": "ravendra",
+      "textbox": "hi there"
+    },
+    {
+      "id": "fb2c",
+      "name": "ravendra",
+      "textbox": "sdf fd afsdf asfa sfads"
+    },
+    {
+      "id": "69d2",
+      "name": "ravendra",
+      "textbox": "some fo the inf sadf asfd asfdsa f"
+    },
+    {
+      "id": "a2b0",
+      "name": "vishal",
+      "textbox": "asd asfd asdfasf saf asfdsaf asfd as"
+    },
+    {
+      "id": "bdf2",
+      "name": "ratnesh",
+      "textbox": "hi "
+    },
+    {
+      "id": "6d86",
+      "name": "ravendra",
+      "textbox": "gg"
+    }
+  ],
+  "isloggedin": false,
+  "users": [
+    {
+      "id": "1",
+      "name": "ravendra",
+      "password": "111",
+      "email": "ravendra@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "ratnesh",
+      "password": "111",
+      "email": "ratnesh@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "vishal",
+      "password": "111",
+      "email": "vish@gmail.com"
+    }
+  ]
+}
