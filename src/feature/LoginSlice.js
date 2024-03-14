@@ -1,16 +1,15 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import UseApi from "../hooks/useApi";
 
 export let getAllUsers = createAsyncThunk("allusers", async () => {
-  let [result, type] = UseApi(["users", "get"]);
-  // let response = await fetch(users);
-  // console.log(users);
-  console.log("result ", result, type);
+  let response = await fetch("http://localhost:5000/users");
+  if (response.ok) {
+    let result = await response.json();
+    return result;
+  }
 });
 
 export let getAllPosts = createAsyncThunk("getAllPosts", async () => {
-  let [posts] = UseApi(["posts", "get"]);
-  let response = await fetch(posts);
+  let response = await fetch("http://localhost:5000/posts");
   if (response.ok) {
     let result = await response.json();
     return result;
@@ -69,6 +68,7 @@ let loginReducer = createSlice({
       state.posts.push(action.payload);
     });
     builder.addCase(deletePost.fulfilled, (state, action) => {
+      // console.log(action);
       state.posts = state.posts.filter((item) => item.id !== action.payload.id);
     });
   },
